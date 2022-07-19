@@ -1,12 +1,10 @@
-import { IoGridSharp } from "react-icons/io5";
-import { SiApplearcade } from "react-icons/si";
-import { RiBarChart2Fill, RiSettings5Fill } from "react-icons/ri";
-import { FaDownload } from "react-icons/fa";
+import { sidebarList } from "../data/sidebar-list";
 import { IoLogOut } from "react-icons/io5";
 
 import styles from "./sidebar.module.css";
 
 const Sidebar = () => {
+  console.log(sidebarList);
   return (
     <aside className={styles.sidebar}>
       <div className={styles.top}>
@@ -20,35 +18,16 @@ const Sidebar = () => {
         </section>
 
         <ul className={styles["sidebar-list"]}>
-          <li>
-            <a href="/" className={styles["list-item"]}>
-              <IoGridSharp className={styles.icons} /> <span>Overview</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="/" className={styles["list-item"]}>
-              <SiApplearcade className={styles.icons} /> <span>Arcade</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="/" className={styles["list-item"]}>
-              <RiBarChart2Fill className={styles.icons} /> <span>Charts</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="/" className={styles["list-item"]}>
-              <FaDownload className={styles.icons} /> <span>Updates</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="/" className={styles["list-item"]}>
-              <RiSettings5Fill className={styles.icons} /> <span>Settings</span>
-            </a>
-          </li>
+          {sidebarList.map((item) => {
+            return (
+              <li>
+                <a href={item.link} className={styles["list-item"]}>
+                  <item.icon className={styles.icons} />{" "}
+                  <span>{item.name}</span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </div>
 

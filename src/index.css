@@ -29,13 +29,6 @@ body {
   /* column-gap: 5rem; */
 }
 
-.navbar {
-  grid-column: 2 / -1;
-  margin: 2rem 7rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid #ddd;
-}
-
 .sidebar {
   grid-row: 1 / -4;
   /* position: fixed;

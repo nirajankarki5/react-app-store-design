@@ -1,5 +1,65 @@
+.navbar {
+  grid-column: 2 / -1;
+  margin: 2rem 7rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #ddd;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .heading {
   font-size: 4.5rem;
   font-weight: 600;
   letter-spacing: -1px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+
+  position: relative;
+}
+
+.icon-btn {
+  border: none;
+  height: 5rem;
+  width: 5rem;
+  background-color: #f2f2f2;
+  padding: 0.7rem;
+  border-radius: 15px;
+}
+
+.icon {
+  color: #999;
+  font-size: 3rem;
+}
+
+.input {
+  background-color: #f2f2f2;
+  border: none;
+  height: 5rem;
+  padding: 0 2rem 0 6rem;
+  border-radius: 15px;
+  font-size: 2rem;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.search {
+  position: absolute;
+  font-size: 3rem;
+  /* right: 350px; */
+  left: 90px;
+  color: #999;
+}
+
+.user {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 15px;
 }

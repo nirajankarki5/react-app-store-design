@@ -1,5 +1,5 @@
 const Trending = () => {
-  return <h2>Trending</h2>;
+  return <section className="trending">Trending</section>;
 };
 
 export default Trending;

@@ -29,15 +29,6 @@ body {
   margin-left: 30rem;
 }
 
-.sidebar {
-  grid-row: 1 / -4;
-  position: fixed;
-  left: 0;
-  width: 30rem;
-  height: 100vh;
-  background-color: pink;
-}
-
 .main {
   grid-column: 1;
 }

@@ -1,0 +1,80 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  width: 30rem;
+  height: 100vh;
+
+  border-right: 1px solid #ddd;
+  padding: 4rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* HEADING */
+
+.sidebar-heading {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding: 0 3rem;
+}
+
+.sidebar-heading .img {
+  height: 6rem;
+  width: 6rem;
+}
+
+.sidebar-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+/* LIST */
+
+.sidebar-list {
+  list-style: none;
+}
+
+.list-item:link,
+.list-item:visited {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  text-decoration: none;
+  color: #777;
+  padding: 1.5rem 2.5rem;
+  border-radius: 10px;
+}
+
+.list-item:hover,
+.list-item:active {
+  background-color: #409cff;
+  color: #fff;
+}
+
+.list-item .icons {
+  font-size: 2.5rem;
+}
+
+.list-item span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.apple-music-img {
+  height: 35rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}

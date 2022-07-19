@@ -7,9 +7,11 @@ function App() {
   return (
     <div className="App">
       <Sidebar />
-      <Navbar />
-      <Main />
-      <Trending />
+      <div className="container">
+        <Navbar />
+        <Main />
+        <Trending />
+      </div>
     </div>
   );
 }

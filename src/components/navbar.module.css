@@ -1,5 +1,5 @@
 .navbar {
-  grid-column: 2 / -1;
+  grid-column: 1 / -1;
   margin: 2rem 7rem;
   padding-bottom: 3rem;
   border-bottom: 1px solid #ddd;

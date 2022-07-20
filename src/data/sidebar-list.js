@@ -14,24 +14,24 @@ export const sidebarList = [
     id: 2,
     icon: SiApplearcade,
     name: "Arcade",
-    link: "/",
+    link: "/arcade",
   },
   {
     id: 3,
     icon: RiBarChart2Fill,
     name: "Charts",
-    link: "/",
+    link: "/charts",
   },
   {
     id: 4,
     icon: FaDownload,
     name: "Updates",
-    link: "/",
+    link: "/updates",
   },
   {
     id: 5,
     icon: RiSettings5Fill,
     name: "Settings",
-    link: "/",
+    link: "/settings",
   },
 ];

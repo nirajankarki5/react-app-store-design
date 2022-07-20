@@ -1,10 +1,14 @@
 import { sidebarList } from "../data/sidebar-list";
 import { IoLogOut } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 import styles from "./sidebar.module.css";
+import { useState } from "react";
 
 const Sidebar = () => {
-  console.log(sidebarList);
+  // inititlize with window.location.pathname because when user reloades the page, active state remains on selected item on sidebar
+  const [path, setPath] = useState(window.location.pathname);
+
   return (
     <aside className={styles.sidebar}>
       <div className={styles.top}>
@@ -20,11 +24,22 @@ const Sidebar = () => {
         <ul className={styles["sidebar-list"]}>
           {sidebarList.map((item) => {
             return (
-              <li>
-                <a href={item.link} className={styles["list-item"]}>
-                  <item.icon className={styles.icons} />{" "}
+              <li
+                key={item.id}
+                onClick={() => {
+                  setPath(window.location.pathname);
+                  console.log(path);
+                }}
+              >
+                <Link
+                  to={item.link}
+                  className={`${styles["list-item"]} ${
+                    item.link === path ? styles.active : ""
+                  }`}
+                >
+                  <item.icon className={styles.icons} />
                   <span>{item.name}</span>
-                </a>
+                </Link>
               </li>
             );
           })}
@@ -32,16 +47,16 @@ const Sidebar = () => {
       </div>
 
       <div className={styles.bottom}>
-        <a href="/">
+        <Link to="/">
           <img
             className={styles["apple-music-img"]}
             src="/images/apple-music.jpeg"
             alt="apple music"
           />
-        </a>
-        <a href="/" className={styles["list-item"]}>
+        </Link>
+        <Link to="/" className={styles["list-item"]}>
           <IoLogOut className={styles.icons} /> <span>Logout</span>
-        </a>
+        </Link>
       </div>
     </aside>
   );

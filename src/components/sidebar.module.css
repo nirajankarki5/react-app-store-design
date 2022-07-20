@@ -53,6 +53,11 @@
 
 .list-item:hover,
 .list-item:active {
+  background-color: #d9ebff;
+  color: #777;
+}
+
+.list-item.active {
   background-color: #409cff;
   color: #fff;
 }

@@ -7,14 +7,18 @@ import Arcade from "./components/pages/Arcade";
 import Charts from "./components/pages/Charts";
 import Settings from "./components/pages/Settings";
 import Updates from "./components/pages/Updates";
+import { useState } from "react";
 
 function App() {
+  // inititlize with window.location.pathname because when user reloades the page, active state remains on selected item on sidebar
+  const [path, setPath] = useState(window.location.pathname);
+
   return (
     <BrowserRouter>
       <div className="App">
-        <Sidebar />
+        <Sidebar path={path} setPath={setPath} />
         <div className="container">
-          <Navbar />
+          <Navbar path={path} />
           <Routes>
             <Route
               exact

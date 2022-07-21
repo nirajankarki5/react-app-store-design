@@ -2,10 +2,15 @@ import { IoNotifications, IoSearchOutline } from "react-icons/io5";
 
 import styles from "./navbar.module.css";
 
-const Navbar = () => {
+const Navbar = ({ path }) => {
   return (
     <nav className={styles.navbar}>
-      <h1 className={styles.heading}>Overview</h1>
+      <h1 className={styles.heading}>
+        {/* MAKING FIRST LETTER CAPITAL */}
+        {path === "/"
+          ? "Overview"
+          : path.substring(1).charAt(0).toUpperCase() + path.slice(2)}
+      </h1>
       <div className={styles["nav-actions"]}>
         <button className={styles["icon-btn"]}>
           <IoNotifications className={styles.icon} />

@@ -3,11 +3,10 @@ import { IoLogOut } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 import styles from "./sidebar.module.css";
-import { useState } from "react";
 
-const Sidebar = () => {
+const Sidebar = ({ path, setPath }) => {
   // inititlize with window.location.pathname because when user reloades the page, active state remains on selected item on sidebar
-  const [path, setPath] = useState(window.location.pathname);
+  // const [path, setPath] = useState(window.location.pathname);
 
   return (
     <aside className={styles.sidebar}>

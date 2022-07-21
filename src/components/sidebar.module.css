@@ -7,9 +7,16 @@
   border-right: 1px solid #ddd;
   padding: 4rem 1.5rem;
 
+  overflow-y: scroll;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* HIDE SCROLLBAR IN SIDEBAR */
+.sidebar::-webkit-scrollbar {
+  display: none;
 }
 
 /* HEADING */

@@ -1,5 +1,5 @@
 .trending {
-  margin: 0 7rem;
+  margin: 0 7rem 0 5rem;
   max-width: 100%;
 }
 
@@ -119,4 +119,16 @@
   color: #fff;
   border-radius: 100px;
   cursor: pointer;
+}
+
+@media (max-width: 1450px) {
+  .trending {
+    margin: 0 5rem 0 3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .trending {
+    display: none;
+  }
 }

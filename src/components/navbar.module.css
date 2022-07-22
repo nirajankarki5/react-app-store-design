@@ -63,3 +63,9 @@
   width: 5rem;
   border-radius: 15px;
 }
+
+@media (max-width: 1450px) {
+  .navbar {
+    margin: 2rem 5rem;
+  }
+}

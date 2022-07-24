@@ -55,3 +55,132 @@ a.download-btn {
   border-radius: 15px;
   transform: scale(1.01);
 }
+
+/* ******************BODY******************* */
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.heading h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.heading a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #409cff;
+  letter-spacing: -0.5px;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  padding: 1.5rem 3rem;
+
+  text-decoration: none;
+}
+
+.menu-icon {
+  font-size: 3rem;
+  color: #777;
+}
+
+.menu-text {
+  font-size: 1.6rem;
+  letter-spacing: -1px;
+  color: #000;
+}
+
+.app {
+  width: 100rem;
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 5rem;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  margin: 0 2rem;
+}
+
+.app::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.card h4 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.details p {
+  font-size: 1.4rem;
+  color: #777;
+}
+
+.details button {
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 100px;
+  color: #409cff;
+}
+
+.slide-icon-left,
+.slide-icon-right {
+  position: absolute;
+  font-size: 5rem;
+  top: 80%;
+
+  background-color: #fff;
+  color: #409cff;
+  padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.slide-icon-left {
+  left: 0;
+}
+
+.slide-icon-right {
+  right: 0rem;
+}

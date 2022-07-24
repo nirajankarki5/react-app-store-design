@@ -39,7 +39,6 @@ body {
 .main-container {
   grid-column: 1;
   display: block;
-  width: 100%;
 
   margin: 0 0 0 7rem;
   position: relative;

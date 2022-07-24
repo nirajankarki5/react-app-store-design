@@ -109,7 +109,7 @@ a.download-btn {
 }
 
 .app {
-  width: 100rem;
+  max-width: 100rem;
   display: flex;
   gap: 3rem;
   margin-bottom: 5rem;

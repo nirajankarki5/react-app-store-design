@@ -19,8 +19,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .App {
@@ -41,6 +39,7 @@ body {
 .main-container {
   grid-column: 1;
   display: block;
+  width: 100%;
 
   margin: 0 0 0 7rem;
   position: relative;
@@ -63,5 +62,11 @@ body {
 
   .main-container {
     padding-right: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: 0;
   }
 }
